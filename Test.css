@@ -1,0 +1,30 @@
+ 
+
+
+@media (min-width: 500px){
+    body{
+        background-color: aqua;
+        content: "Hello";
+    }
+}
+
+@media (max-width:499px){
+    body{
+        background-color: orange;
+    }
+}
+
+
+.grid{
+    display: grid;
+    background-color: green;
+    padding:20px;
+    grid-column-gap:30px ;
+    grid-row-gap:20px
+     
+}
+
+.grid-item{
+    background-color: white;
+     
+}
