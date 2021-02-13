@@ -1,30 +1,99 @@
  
+#top{
+     text-align: center;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color:brown;
+     font-size: 30px;
+     display: flexbox;
+}
 
+@media (min-width:600px){
+    body{
+        background-color: azure;
+    }
 
-@media (min-width: 500px){
+    .grid>div{
+        background-color:greenyellow;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    text-align: right;
+}
+
+@media (max-width:599px){
     body{
         background-color: aqua;
-        content: "Hello";
+    }
+
+    .grid>div{
+        background-color:lightblue;
     }
 }
 
-@media (max-width:499px){  
-    body{
-        background-color: orange;
-    }
+.grid1>div{
+    display: grid;
+    grid-column: 20px;
+    grid-row: 10px;
+
 }
+
 
 
 .grid{
-    display: grid;
-    background-color: green;
-    padding:20px;
-    grid-column-gap:30px ;
-    grid-row-gap:20px
+    display: flex;
+    flex-wrap: wrap;
+    
      
+}
+
+.grid>div{
+     
+    font-size: 20px;
+    margin: 20px;
+    padding:20px;
+    width: 200px;
+}
+
+.grid>div:hover{
+    background-color:orange;
+    font-size: 20px;
+    margin: 20px;
+    padding:20px;
+    width: 200px;
+}
+
+
+ol{
+     display: flexbox;
+}
+.Text{
+    display: flexbox;
+}
+
+.Text ::selection{
+    background-color: chartreuse;
+    color: brown;
 }
 
 .grid-item{
     background-color: white;
      
+}
+
+#btop{
+    background-color: lightsalmon;
+    border: none;
+     
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#btop:hover{
+    background-color: orange;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
 }
